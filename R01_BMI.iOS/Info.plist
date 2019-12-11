@@ -30,7 +30,5 @@
 	<string>LaunchScreen</string>
 	<key>CFBundleName</key>
 	<string>R01_BMI</string>
-	<key>XSAppIconAssets</key>
-	<string>Assets.xcassets/AppIcon.appiconset</string>
 </dict>
 </plist>
