@@ -17,5 +17,24 @@ namespace R01_BMI
         {
             InitializeComponent();
         }
+
+        //button
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            BMI bmi = new BMI();
+            try
+            {
+                string r = bmi.getBMI
+                    (double.Parse(height.Text) / 100.0, double.Parse(weight.Text));
+
+                Result.Text = r;
+
+            }
+            catch (FormatException)
+            { Result.Text = "値を入力してください"; }
+            catch (ArgumentOutOfRangeException)
+            { Result.Text = "正しい値を入力してください"; }
+
+        }
     }
 }

@@ -11,17 +11,18 @@
         <Label Text="BMI計算" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
-        
+
         <StackLayout HorizontalOptions="CenterAndExpand"
                      VerticalOptions="CenterAndExpand">
-            <Label Text="身長を入力(cm)" />
-            <Entry MaxLength="3" Placeholder="身長を入力" />
             
-            <Label Text="体重を入力(kg)" />
-            <Entry MaxLength="2" Placeholder="体重を入力" />
-            
-            <Button Text="BMIを計算する" />
-            <Label Text="ボタンを押すとBMIを計算します" />
+            <Label x:Name="height" Text="身長を入力(cm)"/>
+            <Entry MaxLength="3" Placeholder="height" />
+
+            <Label x:Name="weight" Text="体重を入力(kg)" />
+            <Entry MaxLength="2" Placeholder="weight" />
+
+            <Button Text="BMIを計算する" Clicked ="Button_Clicked"/>
+            <Label x:Name="Result" Text="ボタンを押すとBMIを計算します" />
 
         </StackLayout>
     </StackLayout>
