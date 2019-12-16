@@ -25,7 +25,7 @@ namespace R01_BMI
             try
             {
                 string r = bmi.getBMI
-                    (double.Parse(height.Text) / 100.0, double.Parse(weight.Text));
+                    (double.Parse(height.Text)/100.0, double.Parse(weight.Text));
 
                 Result.Text = r;
 
@@ -38,3 +38,4 @@ namespace R01_BMI
         }
     }
 }
+ 
