@@ -16,10 +16,10 @@
                      VerticalOptions="CenterAndExpand">
             
             <Label Text="身長を入力(cm)"/>
-            <Entry x:Name="height" MaxLength="3" Placeholder="height" />
+            <Entry x:Name="height" MaxLength="3" Placeholder="身長を入力" />
 
             <Label Text="体重を入力(kg)" />
-            <Entry x:Name="weight" MaxLength="3" Placeholder="weight" />
+            <Entry x:Name="weight" MaxLength="3" Placeholder="体重を入力" />
 
             <Button Text="BMIを計算する" Clicked ="Button_Clicked"/>
             <Label x:Name="Result" Text="ボタンを押すとBMIを計算します" />

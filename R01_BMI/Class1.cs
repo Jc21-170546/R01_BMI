@@ -12,9 +12,6 @@ namespace R01_BMI
 
         public string getBMI(double h, double w)
         {
-            if (1 > h || 1 > w)
-                throw new ArgumentOutOfRangeException();
-
             double result = 0;
 
             result = Math.Truncate((w / (h * h)) * 100.0) / 100.0;
@@ -37,4 +34,3 @@ namespace R01_BMI
         }
     }
 }
-
